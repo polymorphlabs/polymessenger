@@ -1,0 +1,24 @@
+{
+  "name": "polymessenger",
+  "version": "1.0.0",
+  "description": "Web service to send SMS messages using Hubtel",
+  "main": "index.js",
+  "repository": "https://github.com/polymorphlabs/polymessenger",
+  "author": "aarjae <raaj.ahab@gmail.com>",
+  "license": "GNU GPL V2",
+  "scripts": {
+    "start": "nodemon"
+  },
+  "dependencies": {
+    "boom": "^7.3.0",
+    "dotenv": "^6.2.0",
+    "fastify": "^1.13.4",
+    "fastify-swagger": "^1.1.0",
+    "hubtel-sms-node": "^1.0.3",
+    "libphonenumber-js": "^1.7.7",
+    "swagger": "^0.7.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
