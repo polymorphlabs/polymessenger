@@ -1,7 +1,12 @@
 const fastify = require("fastify");
+const dotenv = require("dotenv");
 const routes = require("./routes");
 const swaggerOptions = require("./config/swagger");
 const auth = require("./middlewares/auth");
+
+
+dotenv.load();
+
 
 const server = fastify({
     logger: true
@@ -21,7 +26,7 @@ routes.forEach(route => {
 // Run the server
 const start = async () => {
     try{
-        await server.listen(3000);
+        await server.listen(process.env.PORT);
         server.swagger();
         console.log("Server starting");
     }catch(err){
