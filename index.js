@@ -1,6 +1,7 @@
 const fastify = require("fastify");
 const routes = require("./routes");
 const swaggerOptions = require("./config/swagger");
+const auth = require("./middlewares/auth");
 
 const server = fastify({
     logger: true
@@ -8,6 +9,8 @@ const server = fastify({
 
 // Register Swagger
 server.register(require("fastify-swagger"), swaggerOptions);
+
+server.use(auth);
 
 
 // Setting routes
