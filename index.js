@@ -5,7 +5,7 @@ const routes = require("./routes");
 const swaggerOptions = require("./config/swagger");
 
 // Loading environment vars
-// dotenv.load("./env");
+dotenv.load("./env");
 
 // Loading authentication keys... The key requires a Bearer token, still don't see the point so automatically adding
 const keys = new Set([process.env.SECURITY_KEY]);
@@ -28,7 +28,7 @@ routes.forEach(route => {
 // Run the server
 const start = async () => {
     try{
-        await server.listen(process.env.PORT);
+        await server.listen(process.env.PORT, '0.0.0.0');
         server.swagger();
     }catch(err){
         server.log.error(err);
