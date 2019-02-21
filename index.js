@@ -5,7 +5,7 @@ const routes = require("./routes");
 const swaggerOptions = require("./config/swagger");
 
 // Loading environment vars
-dotenv.load("./env");
+// dotenv.load("./env");
 
 // Loading authentication keys... The key requires a Bearer token, still don't see the point so automatically adding
 const keys = new Set([process.env.SECURITY_KEY]);
