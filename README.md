@@ -16,6 +16,9 @@ Clone this repo
 - Rename the *.env.sample* file to *.env* and fill in the fields
 - Run *nodemon* to start the project 
 
+### API Documentation
+You can access the API Documentation by navigating to http://localhost:8080/documentation after starting the project
+
 ## Authors
 
 * **Raaj Ahiable** - *Initial work* - [aarjae](https://github.com/aarjae)

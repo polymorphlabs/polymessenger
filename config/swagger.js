@@ -1,3 +1,5 @@
+const dotenv = require("dotenv").load("../.env");
+
 module.exports = {
     routePrefix: '/documentation',
     exposeRoute: true,
@@ -7,8 +9,8 @@ module.exports = {
             description: 'Web Service to send SMS using Hubtel',
             version: '1.0.0'
         },
-        host: 'localhost:3000',
-        schemes: ['http'],
+        host: `localhost:${process.env.PORT}`,
+        schemes: ['http', 'https'],
         consumes: ['application/json'],
         produces: ['application/json']
     }

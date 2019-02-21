@@ -19,11 +19,10 @@ module.exports.sendSMS = async (req, res) => {
     };
 
     try{
-        const messageSendResponse = await SMSAgent.sendSMS(payload);
+        await SMSAgent.sendSMS(payload);
         return {
             success: true,
             message: `SMS sent to ${message.to} was successful`,
-            payload: messageSendResponse
         };
     }catch (err) {
         throw boom.boomify(err);

@@ -1,4 +1,3 @@
-// Schema definitions for API calls
 module.exports.sendSMSSchema = {
     body: {
         type: "object",

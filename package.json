@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": "https://github.com/polymorphlabs/polymessenger",
   "author": "aarjae <raaj.ahab@gmail.com>",
-  "license": "GNU GPL V2",
+  "license": "GPL-3.0-only",
   "scripts": {
     "start": "nodemon"
   },
@@ -13,6 +13,7 @@
     "boom": "^7.3.0",
     "dotenv": "^6.2.0",
     "fastify": "^1.13.4",
+    "fastify-bearer-auth": "^3.0.1",
     "fastify-swagger": "^1.1.0",
     "hubtel-sms-node": "^1.0.3",
     "libphonenumber-js": "^1.7.7",
