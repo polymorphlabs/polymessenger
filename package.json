@@ -7,7 +7,7 @@
   "author": "aarjae <raaj.ahab@gmail.com>",
   "license": "GPL-3.0-only",
   "scripts": {
-    "start": "nodemon"
+    "start": "node index.js"
   },
   "dependencies": {
     "boom": "^7.3.0",
