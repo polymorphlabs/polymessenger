@@ -9,13 +9,13 @@ const SMSAgent = require("hubtel-sms-node")({
 
 
 module.exports.sendSMS = async (req, res) => {
-    const { ...message } = req.body;
+    const { from, to, message } = req.body;
     // Creating message payload
     const payload = {
-        from: message.from,
-        to: message.to,
-        registeredDelivery: true,
-        message: message.message
+        from,
+        to,
+        message,
+        registeredDelivery: true
     };
 
     try{
